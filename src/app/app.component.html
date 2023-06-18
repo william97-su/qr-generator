@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Generador de códigos QR</h1>
+    <input type="text" [(ngModel)]="myAngularxQrCode" placeholder="Ingrese Dato/URL">
+    <br>
+    <qrcode
+        (qrCodeURL)="onChangeURL($event)"
+        [qrdata]="myAngularxQrCode"
+        [allowEmptyString]="true"
+        [ariaLabel]="'QR Code'"
+        [cssClass]="'center'"
+        [colorDark]="'#000000'"
+        [colorLight]="'#ffffff'"
+        [elementType]="'canvas'"
+        [errorCorrectionLevel]="'Q'"
+        [margin]="4"
+        [scale]="1"
+        [title]="'QR'"
+        [width]="400"
+    ></qrcode>
+    <!-- QR Correction level ('L', 'M', 'Q', 'H') -->
+    <!-- 'canvas', 'svg', 'img', 'url' (alias for 'img') -->
+    <a [href]="qrCodeDownloadLink" download="qrcode">Descargar QR</a>
+</div>

@@ -1,0 +1,33 @@
+.container {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  color: #333;
+  text-align: center;
+}
+
+.container input[type="text"] {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container a {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+  
