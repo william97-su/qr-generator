@@ -9,10 +9,23 @@ import { SafeUrl } from '@angular/platform-browser';
 export class AppComponent {
   public myAngularxQrCode: string = '';
   public qrCodeDownloadLink: SafeUrl = "";
+  public qrCodeSize: string = "large";
   constructor () {}
   onChangeURL(url: SafeUrl) {
     this.qrCodeDownloadLink = url;
   }
   title = 'qr-generator';
+  getQrCodeScale(): number {
+    switch (this.qrCodeSize) {
+      case 'small':
+        return 100;
+      case 'medium':
+        return 200;
+      case 'large':
+        return 400;
+      default:
+        return 400;
+    }
+  }
   
 }

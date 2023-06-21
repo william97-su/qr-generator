@@ -15,8 +15,17 @@
         [margin]="4"
         [scale]="1"
         [title]="'QR'"
-        [width]="400"
+        [width]="getQrCodeScale()"
     ></qrcode>
+    <br>
+    <div>
+        <label for="size">Tamaño:</label>
+        <select id="size" [(ngModel)]="qrCodeSize">
+        <option value="small" [selected]="qrCodeSize === 'small'">Small</option>
+        <option value="medium" [selected]="qrCodeSize === 'medium'">Medium</option>
+        <option value="large" [selected]="qrCodeSize === 'large'">Large</option>
+        </select>
+    </div>
     <!-- QR Correction level ('L', 'M', 'Q', 'H') -->
     <!-- 'canvas', 'svg', 'img', 'url' (alias for 'img') -->
     <a [href]="qrCodeDownloadLink" download="qrcode">Descargar QR</a>
