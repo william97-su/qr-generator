@@ -17,5 +17,11 @@ Este es un generador de códigos QR que te permite crear códigos QR personaliza
 Antes de ejecutar el generador de códigos QR, asegúrate de tener instalado lo siguiente:
 
 - Node.js: [Descargar e instalar Node.js](https://nodejs.org/es/)
-- Angular CLI: Instalar Angular CLI globalmente mediante el siguiente comando:
+- Angular CLI
+
+  **Nota**: Biblioteca utilizada: angularx-qrcode
+
+  Tipos qr:
+
+  tel:1234 , whatsapp:1234, WIFI:S:ssid;T:WPA;P:pass;;
 
