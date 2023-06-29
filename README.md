@@ -21,7 +21,4 @@ Antes de ejecutar el generador de códigos QR, asegúrate de tener instalado lo 
 
   **Nota**: Biblioteca utilizada: angularx-qrcode
 
-  Tipos qr:
-
-  tel:1234 , whatsapp:1234, WIFI:S:ssid;T:WPA;P:pass;;
 
